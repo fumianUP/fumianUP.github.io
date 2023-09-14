@@ -31,16 +31,15 @@
                             <div class="img"><img src="android-chrome-192x192.png" alt="img" class="js-avatar iUp profilepic"></div>
                             <div class="info iUp">
                                 <div class="info-back">
-                                    <h2> 
-                                        
+                                    <h2>
                                            Cabbage
-                                        
                                     </h2>
-                                    <p>
-                                        
-                                            2023 · Love YOU 
-                                        
-                                    </p>
+                                    <p id="date"></p>
+				    <script>
+					    var time = new Date();
+					    var year = time.getFullYear();
+					    document.getElementById("date").innerHTML = year + ' · Love YOU';
+				    </script>
                                 </div>
                             </div>
                         </a>
